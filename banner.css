@@ -1,0 +1,69 @@
+
+
+.banner{
+    background: var(--blue);
+    color: var(--white-color);
+    font-family: var(--font);
+    text-align: center;
+    padding: 2.5em 2em; /* limita até onde elementos vão  */
+}
+.banner__titulo{
+    font-size: 18px;
+    font-weight: 700;
+
+}
+.banner__texto{
+    font-weight: 500;
+    margin: 1em;
+}
+
+.banner__pesquisa{
+    background: transparent;
+    border: 1px solid var(--white-color);
+    border-radius: 24px;
+    width: 100%;
+    padding: 1em;
+}
+
+.banner__pesquisa::placeholder{
+    font-family: var(--font);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--white-color);
+    text-align: center;
+    background: url(../img/Vector.svg) no-repeat;
+    background-position: 1.5em;
+}
+
+@media screen and (min-width: 1024px){
+
+    .banner{
+        padding: 5em 4em;
+    }
+
+    .banner__titulo{
+        font-size: 36px;
+    }
+    .banner__pesquisa{
+        width: 40%;
+    }
+    .banner__pesquisa::placeholder{
+        background-position: 6em;
+    }
+}
+
+@media screen and (min-width: 1728px){
+
+    .banner{
+        padding: 7em 4em;
+    }
+    .banner__pesquisa{
+        width: 35%;
+        padding: 1.5em 0;
+    }
+
+    .banner__texto {
+        margin-bottom: 1.7em;
+    }
+
+}

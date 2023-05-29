@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap');
+
+@import url("../style/header.css");
+@import url("../style/banner.css");
+@import url("../style/carrossel.css");
+@import url("../style/recomendacao.css");
+@import url("../style/topicos.css");
+
+:root {
+    --background-color: #EBECEE;
+    --white-color: #FFFFFF;
+    --background-header-color: #FFFFFF;
+    --title-color: #EB9B00;
+    --second-title-color: #002F52;
+    --blue: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --font: 'Poppins';
+    --second-font: 'Josefin Sans';
+    --black: #000000;
+    --gray: #858585;
+    --gray-darker: #474646;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+

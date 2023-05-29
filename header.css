@@ -1,0 +1,125 @@
+.cabecalho__menu-hamburguer {
+    display: inline-block; /* permite limites de altura e largura */
+    width: 24px;
+    height: 24px;
+    background-image: url("../img/Menu.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+header {
+    display: flex;
+    background-color: var(--background-header-color);
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 1em;
+}
+.container {
+    display: flex;
+    align-items: center;
+}
+.container__image{
+    padding: 1em;
+}
+.lista-menu{
+   display: none;
+   position: absolute;
+   top: 100%;
+
+}
+.container__botao:checked ~ .lista-menu {
+    display: block;
+}
+.lista-menu__titulo, .lista-menu__item {
+    background-color: var(--background-header-color);
+    padding: 1.3em;
+    width: 63vw;  /* largura viewpoint com responsividade */
+}
+.lista-menu__titulo{
+    color: var(--title-color);
+    font-family: var(--font);
+    font-size: 16px;
+    font-weight: 700;
+}
+.lista-menu__link {
+    background: var(--blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-transform: uppercase;
+    font-family: var(--font);
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: none;
+}
+.container__botao, .container__link{
+    display: none;
+}
+
+.cabecalho__nome-empresa, .cabecalho__lista-menu{
+    display: none;
+}
+
+
+@media screen and (min-width: 1024px){
+
+    .cabecalho__lista-menu, .cabecalho__nome-empresa{
+        display: block;
+    }
+    .favoritos, .cabecalho__menu-hamburguer, .cabecalho__categoria__botao{
+        display: none;
+    }
+    .cabecalho__negrito__nome-empresa{
+       font-weight: 700;
+    }
+    .cabecalho__nome-empresa{
+        font-family: var(--second-font);
+        font-size: 30px;
+        font-weight: 400;
+    }
+    .cabecalho__lista-menu{
+        display: flex;
+    }
+    .cabecalho__item-menu{
+        padding: 0 2em;
+        text-transform: uppercase;
+    }
+    .cabecalho__link{
+        text-decoration: none;
+        color: var(--black);
+    }
+    .container__image{
+        padding: 0em 2.5em;
+    }
+    .cabecalho__categoria__botao:checked ~ .lista-menu{
+        display: block;
+        width: auto;
+    }
+}
+
+@media screen and (min-width: 1728px){
+
+    .container__image{
+        padding: 0.8em;
+    }
+
+    .container__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        color: var(--black);
+        padding-left: 0.5em;
+        font-size: 20px;
+    }
+
+    header{
+        padding: 1em 2em;
+    }
+
+    .cabecalho__lista-menu {
+        margin-right: auto;
+    }
+    .container {
+        padding-right: 2em;
+    }
+}
